@@ -1,0 +1,37 @@
+{
+  "name": "svelte-spa-boilerplate",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "core-js": "^3.11.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "sirv-cli": "^0.4.0",
+    "standard": "^16.0.3",
+    "svelte": "^3.0.0",
+    "svelte-hash-router": "^1.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "standard && run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
+  },
+  "standard": {
+    "ignore": [
+      "public/*"
+    ]
+  }
+}
