@@ -1,6 +1,6 @@
 # svelte-spa-boilerplate
 
-Make a svelte spa app compatible with IE11.  
+Make a svelte spa app compatible with IE11.
 
 Technologies used:
 
